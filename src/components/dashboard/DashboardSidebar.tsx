@@ -64,6 +64,7 @@ const DashboardSidebar = () => {
     { path: '/admin-professionals', label: 'Professionnels', icon: <Briefcase size={20} /> },
     { path: '/admin-projects', label: 'Projets', icon: <FileText size={20} /> },
     { path: '/admin-marketplace', label: 'Marketplace', icon: <ShoppingBag size={20} /> },
+    { path: '/payment-management', label: 'Paiements', icon: <CreditCard size={20} /> },
     { path: '/admin-certifications', label: 'Certifications', icon: <Award size={20} /> },
     { path: '/admin-settings', label: 'Paramètres', icon: <Settings size={20} /> },
   ];
@@ -84,7 +85,7 @@ const DashboardSidebar = () => {
     { path: '/user-profile', label: 'Mon profil', icon: <User size={20} /> },
     { path: '/publish-project', label: 'Publier un projet', icon: <PlusCircle size={20} /> },
     { path: '/project-tracking', label: 'Mes projets', icon: <Clock size={20} /> },
-    { path: '/find-professionals', label: 'Trouver des pros', icon: <Tool size={20} /> },
+    { path: '/find-professionals', label: 'Trouver des pros', icon: <Wrench size={20} /> },
     { path: '/user-messages', label: 'Messages', icon: <MessageSquare size={20} /> },
     { path: '/marketplace', label: 'Marketplace', icon: <ShoppingBag size={20} /> },
   ];

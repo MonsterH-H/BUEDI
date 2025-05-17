@@ -30,6 +30,7 @@ const ProductDetails = lazy(() => import("./pages/ProductDetails"));
 const ProductManagement = lazy(() => import("./pages/ProductManagement"));
 const AddProduct = lazy(() => import("./pages/AddProduct"));
 const EditProduct = lazy(() => import("./pages/EditProduct"));
+const PaymentManagement = lazy(() => import("./pages/PaymentManagement"));
 
 // Composant de chargement
 const LoadingSpinner = () => <div>Chargement...</div>;
@@ -75,6 +76,11 @@ const App = () => (
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/marketplace" element={<Marketplace />} />
                         <Route path="/marketplace/product/:id" element={<ProductDetails />} />
+                        <Route path="/payment-management" element={
+                          <ProtectedRoute>
+                            <PaymentManagement />
+                          </ProtectedRoute>
+                        } />
                         
                         {/* Routes protégées */}
                         <Route path="/publish-project" element={
